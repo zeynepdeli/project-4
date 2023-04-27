@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap");
+.order-card-left button, .products-card-order button, .banner-left button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  position: relative;
+}
+.navbar .background {
+  width: 50%;
+  position: absolute;
+  background-color: red;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -3;
+}
+.navbar-title {
+  font-size: 32px;
+}
+.navbar-title p span:nth-child(1) {
+  font-family: "DynaPuff";
+  color: rgb(188, 0, 22);
+}
+.navbar-title p span:nth-child(2) {
+  font-family: "DynaPuff";
+  color: orange;
+}
+.navbar-menu {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+.navbar-menu a {
+  text-decoration: none;
+}
+.navbar-menu a:nth-child(1) {
+  font-weight: 500;
+  color: rgb(188, 0, 22);
+}
+.navbar-menu a:nth-child(2) {
+  font-weight: 500;
+  color: white;
+}
+.navbar-tel {
+  color: white;
+}
+.navbar-tel i {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border-radius: 15px 15px 0 15px;
+  transform: scaleX();
+}
+.navbar-tel i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+
+.banner {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.banner .background {
+  width: 50%;
+  position: absolute;
+  background-color: red;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -3;
+}
+.banner-left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.banner-middle {
+  width: 33%;
+  position: relative;
+}
+.banner span {
+  position: absolute;
+  top: 5%;
+  right: 7%;
+  background-color: #ffc736;
+  padding: 3px 6px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  transform: scaleX();
+}
+.banner img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+.banner-right {
+  width: 33%;
+  text-align: end;
+}
+.banner-right h4 {
+  color: #ffc736;
+  font-size: 28px;
+}
+.banner-right p {
+  color: white;
+}
+
+.product {
+  padding: 20px 50px;
+  border: 5px solid black;
+}
+.product-title {
+  text-align: center;
+}
+.product-title h1 {
+  color: rgb(188, 0, 22);
+}
+.product-title span {
+  font-family: "DynaPuff";
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products-card {
+  width: 280px;
+  text-align: center;
+  border-radius: 40px 40px 0px 0px;
+  box-shadow: 2px 2px 5px gray;
+  margin-bottom: 10px;
+  transform: scaleX();
+}
+.products-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+.products-card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgb(188, 0, 22);
+  text-overflow: ellipsis;
+  border-radius: 40px 40px 0px 0px;
+}
+.products-card p {
+  margin: 10px 0;
+}
+.products-card-content {
+  display: flex;
+  justify-content: space-around;
+}
+.products-card-content span {
+  background-color: #ffc736;
+  padding: 3px 6px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.products-card-order i {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border-radius: 15px 15px 0 15px;
+  transform: scaleX();
+  background-color: black;
+  color: white;
+}
+.products-card-order i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+.order {
+  display: flex;
+  width: 100%;
+  padding: 50px 0;
+  border-top: 5px solid black;
+  justify-content: center;
+}
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 9px black;
+  overflow-x: hidden;
+  transform: rotate(5deg);
+}
+.order-card-left {
+  background-color: rgb(188, 0, 22);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 65%;
+  align-items: start;
+  padding: 0 0 15px 15px;
+}
+.order-card-left h3 {
+  color: white;
+}
+.order-card-left button {
+  background-color: white;
+  color: red;
+}
+.order-card-right {
+  width: 35%;
+  background-color: #ffc736;
+}
+.order-card-right img {
+  width: 300px;
+}
+
+.social {
+  width: 100%;
+  border-top: 5px solid black;
+  padding: 20px 50px;
+}
+.social-title {
+  text-align: center;
+  color: rgb(188, 0, 22);
+}
+.social-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+.socials {
+  flex: 1 1 220px;
+}
+.social img {
+  width: 100px;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  border-top: 5px solid black;
+  gap: 50px;
+}
+.footer-title {
+  text-align: start;
+}
+.footer-title p {
+  font-size: 32px;
+}
+.footer-title p span:nth-child(1) {
+  font-family: "DynaPuff";
+  color: rgb(188, 0, 22);
+}
+.footer-title p span:nth-child(2) {
+  font-family: "DynaPuff";
+  color: orange;
+}
+.footer-title p {
+  font-size: 48px;
+  width: 200px;
+}
+.footer-title ul {
+  display: flex;
+  gap: 10px;
+}
+.footer-title ul i {
+  font-size: 15px;
+}
+.footer-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer-menu ul {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu ul li:nth-child(1) {
+  font-weight: 700;
+}
+.footer-menu ul li:hover {
+  color: rgb(188, 0, 22);
+}
+.footer li {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
