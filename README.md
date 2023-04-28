@@ -1,6 +1,6 @@
 # Project-4
 
-##İLK SCSS DENEYİMİ
+##İLK SCSS-SASS DENEYİMİ
 
 ##SCREEN
 
